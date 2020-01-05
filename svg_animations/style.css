@@ -1,0 +1,47 @@
+body{
+    text-align: center;;
+}
+#ball{
+
+animation: ball-slide 2s 0.25s infinite;
+}
+
+#cat-paw-behind{
+    animation: paw 2s 0.25s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes paw{
+    from{
+       
+        transform: rotate(0deg);
+    }
+    to{
+       
+        transform: rotate(45deg);
+    }
+}
+@keyframes ball-slide{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(130px);
+    }
+}
+
+#cat-tail{
+    animation: tail-wag 2s 0.25s infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    
+}
+
+@keyframes tail-wag{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-9deg);
+    }
+}
