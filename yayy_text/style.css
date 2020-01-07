@@ -1,3 +1,35 @@
 body{
     text-align: center;
 }
+
+#pink-dot{
+   
+    animation: pinky-moves .25s 1s  ;
+   
+}
+#black-dot{
+   
+    animation: pinky-moves .25s 2s;
+   
+}
+#golden-dot{
+   
+    animation: pinky-moves .25s 3s ;
+   
+}
+#gray-dot{
+  
+    animation: pinky-moves .25s 4s ;
+   
+}
+@keyframes pinky-moves{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
